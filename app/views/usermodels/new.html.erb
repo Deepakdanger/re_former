@@ -6,3 +6,15 @@
     <%= form.text_field :password %>
     <%= form.submit "Create" %>
   <% end %>
+
+  <% if @usermodel.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@usermodel.errors.count, "error") %> stop the user from submitting:</h2>
+
+    <ul>
+    <% @usermodel.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
