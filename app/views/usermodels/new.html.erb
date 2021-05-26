@@ -1,0 +1,8 @@
+<h1> HELLLOOO WORLD!!!</h1>
+
+ <%= form_with usermodel: @usermodel do |form| %>
+    <%= form.text_field :name %>
+    <%= form.text_field :email %>
+    <%= form.text_field :password %>
+    <%= form.submit "Create" %>
+  <% end %>
