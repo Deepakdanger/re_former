@@ -3,12 +3,18 @@ class UsermodelsController < ApplicationController
     end
 
     def create
-        @user = Usermodel.new(username: params[:username], email: params[:email], password: params[:password])
-
+        @user = Usermodel.new(user_params)
+      
         if @user.save
-          redirect_to  new_usermodel_path
+          redirect_to new_usermodels_path
         else
           render :new
         end
-    end
+      end
+
+  private
+
+  def user_params
+    params.require(:usermodels).permit(:username, :email, :password)
+  end
 end
