@@ -1,16 +1,20 @@
 class UsermodelsController < ApplicationController
     def new
-      @user = Usermodel.new  
+      @usermodel = Usermodel.new
     end
 
     def create
-        @user = Usermodel.new(usermodel_params)
+        @usermodel = Usermodel.new(usermodel_params)
       
-        if @user.save
-          redirect_to new_usermodel_path
+        if @usermodel.save
+          redirect_to new_usermodels_path
         else
           render :new
         end
+    end
+
+    def edit
+      @usermodel = Usermodel.find(params[:id])
     end
 
     private
