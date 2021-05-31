@@ -17,6 +17,16 @@ class UsermodelsController < ApplicationController
       @usermodel = Usermodel.find(params[:id])
     end
 
+    def update
+      @usermodel = Usermodel.find(params[:id])
+    
+      if @usermodel.update(usermodel_params)
+        redirect_to edit_usermodels_path
+      else
+        render :edit
+      end
+  end
+
     private
 
     def usermodel_params

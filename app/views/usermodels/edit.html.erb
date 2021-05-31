@@ -27,7 +27,7 @@
  </form> %>
 
 
-<%= form_with model: @usermodel, method: :get do |form| %>
+<%= form_with model: @usermodel do |form| %>
   <%= form.label :username, "Username:"%> 
   <%= form.text_field :username%>
   <% @usermodel.errors.full_messages_for(:username).each do |message| %>
