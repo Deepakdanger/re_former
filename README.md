@@ -1,14 +1,15 @@
-# Forms
+# Re-former
 
-- The project is creating a junior version of Active records. It has three models: User, Posts and comments
-- There are associations between the models as well as validations for the model datas.
+- This project entails building forms in three(3) ways. They include the "html" method, using "form_tag" method
+and then finally using "form_with" method.
+
 ## Getting started
 
 To get started with the app, first clone the repo and `cd` into the directory:
 
 ```
-$ git clone (https://github.com/Arinpe/active_record)
-$ cd active_record
+$ git clone https://github.com/Deepakdanger/re_former.git
+$ cd re_former
 ```
 
 Then install the needed packages (while skipping any Ruby gems needed only in production):
@@ -40,10 +41,10 @@ Visiting the URL returned by the original `heroku create` should now show you th
 
 ## Branches
 
-Simply check out the corresponding branch using `git checkout feature`:
+Simply check out the corresponding branch using `git checkout`:
 
 ```
-$ git checkout feature
+$ git checkout <branch name>
 ```
 
 ## Authors

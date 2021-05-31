@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateUsermodels < ActiveRecord::Migration[6.1]
   def change
     create_table :usermodels do |t|
