@@ -1,4 +1,4 @@
-# Active_records
+# Forms
 
 - The project is creating a junior version of Active records. It has three models: User, Posts and comments
 - There are associations between the models as well as validations for the model datas.
