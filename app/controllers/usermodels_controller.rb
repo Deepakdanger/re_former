@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class UsermodelsController < ApplicationController
   def new
     @usermodel = Usermodel.new
