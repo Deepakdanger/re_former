@@ -27,6 +27,10 @@ class UsermodelsController < ApplicationController
     end
   end
 
+  def index
+    @usermodels = Usermodel.all
+  end
+
   private
 
   def usermodel_params
