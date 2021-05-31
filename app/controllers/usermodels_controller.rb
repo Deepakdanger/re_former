@@ -7,7 +7,7 @@ class UsermodelsController < ApplicationController
         @usermodel = Usermodel.new(usermodel_params)
       
         if @usermodel.save
-          redirect_to new_usermodels_path
+          redirect_to new_usermodel_path
         else
           render :new
         end
@@ -21,7 +21,7 @@ class UsermodelsController < ApplicationController
       @usermodel = Usermodel.find(params[:id])
     
       if @usermodel.update(usermodel_params)
-        redirect_to edit_usermodels_path
+        redirect_to edit_usermodel_path
       else
         render :edit
       end
